@@ -1,46 +1,137 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="dv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>ޢަލީ އިރުފާން</title>
 
-    <!-- Linking to an external CSS file -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 
-    <!-- Linking to an external JavaScript file -->
-    <script src="script.js"></script>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Add your custom CSS styles here (if needed) -->
+    <style>
+        /* Example CSS styles */
+        body {
+            font-family: 'Julius Sans One', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
 
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<html dir="rtl" lang="dv">
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Hamburger menu icon styles */
+        .menu-icon {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        /* Styles for the mobile menu */
+        .mobile-menu {
+            display: none;
+            width: 100%;
+            text-align: center;
+            background-color: #333;
+        }
+
+        .mobile-menu ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .mobile-menu li {
+            padding: 10px;
+        }
+
+        /* Media query to show/hide the mobile menu */
+        @media screen and (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <div class="container">
-    <header>
-      <h1>ޢަލީ އިރުފާން </h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>ޢަލީ އިރުފާން</h1>
+            <!-- Hamburger menu icon -->
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </header>
 
-    <nav>
-      <ul>
-        <li><a href="#">ތަޢާރަފް</a></li>
-        <li><a href="#">މަޒުމޫނު</a></li>
-        <li><a href="#">ވާހަކަ</a></li>
-        <li><a href="#">ޅެން</a></li>
-        <li><a href="#">ފިލްމް ރިވިއު</a><li>
-        <ul class="social-icons">
-          <li style="float:left">
-            <a href="#" class="social-icon"> <i class="fa fa-instagram"></i></a>
-          </li>
-          <li style="float:left">
-            <a href="www.instagram.com/alyirufan" class="social-icon"> <i class="fa fa-facebook"></i></a>
-          </li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="#">ތަޢާރަފް</a></li>
+                <li><a href="#">މަޒުމޫނު</a></li>
+                <li><a href="#">ވާހަކަ</a></li>
+                <li><a href="#">ޅެން</a></li>
+                <li><a href="#">ފިލްމް ރިވިއު</a></li>
+            </ul>
+        </nav>
 
+        <!-- Mobile menu for small screens -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#">ތަޢާރަފް</a></li>
+                <li><a href="#">މަޒުމޫނު</a></li>
+                <li><a href="#">ވާހަކަ</a></li>
+                <li><a href="#">ޅެން</a></li>
+                <li><a href="#">ފިލްމް ރިވިއު</a></li>
+            </ul>
+        </div>
+    </div>
 
-
-    <footer>ޢަލީ އިރުފާން 2023</footer>
-    
-  
-  </div>
+    <!-- JavaScript to toggle the mobile menu -->
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
