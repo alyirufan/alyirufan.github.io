@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alyirufan.xyz</title>
+    <title>alyirufan.com</title>
     <style>
         /* Style for the navigation bar */
         .navbar {
@@ -22,20 +22,37 @@
             padding: 14px 16px;
             text-decoration: none;
             font-family: Arial, sans-serif; /* Change the font family to Arial */
+            transition: text-decoration 0.2s; /* Add transition for text-decoration */
         }
 
-        /* Change the color of the links when you hover over them */
+        /* Underline the text on hover */
         .navbar a:hover {
-            background-color: #ddd;
-            color: black;
+            text-decoration: underline; /* Underline text on hover */
+            color: white; /* Maintain text color */
+        }
+
+        /* Style for the hamburger menu icon */
+        .menu-icon {
+            display: none; /* Hide the menu icon by default */
+            cursor: pointer;
         }
 
         /* Media query for mobile view */
         @media screen and (max-width: 600px) {
             .navbar a {
                 float: none; /* Remove float for mobile view */
-                display: block;
+                display: none; /* Hide the links for mobile view */
                 text-align: right; /* Adjust text alignment */
+            }
+
+            .menu-icon {
+                display: block; /* Show the menu icon for mobile view */
+                padding: 14px 16px;
+            }
+
+            /* Show the navigation links when the menu icon is clicked */
+            .menu-icon.active + .navbar-links {
+                display: block;
             }
         }
     </style>
@@ -47,9 +64,27 @@
     <a href="#">ލިޔުން</a>
     <a href="#">ފިލްމް ރިވިއު</a>
     <a href="#">ޑައުންލޯޑް</a>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
 </div>
 
 <!-- Your website content goes here -->
+
+<script>
+    function toggleMenu() {
+        var menuIcon = document.querySelector(".menu-icon");
+        var navbarLinks = document.querySelector(".navbar");
+
+        // Toggle the "active" class to show/hide the menu
+        if (navbarLinks.style.display === "block") {
+            navbarLinks.style.display = "none";
+        } else {
+            navbarLinks.style.display = "block";
+        }
+
+        // Toggle the "active" class to change the menu icon
+        menuIcon.classList.toggle("active");
+    }
+</script>
 
 </body>
 </html>
