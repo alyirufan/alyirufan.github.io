@@ -1,7 +1,7 @@
 /* styles.css */
 @font-face {
     font-family: 'MvTypeWriter';
-    src: url('/mvtypewritersb_v1.1.ttf') format('truetype');
+    src: url('mvtypewritersb_v1.1.ttf') format('truetype');
 }
 
 /* Style for the navigation bar */
