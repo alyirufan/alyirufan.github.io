@@ -1,4 +1,8 @@
 /* styles.css */
+@font-face {
+    font-family: 'MvTypeWriter';
+    src: url('/aliirufaan.github.io/docs/mvtypewritersb_v1.1.ttf') format('truetype');
+}
 
 /* Style for the navigation bar */
 .navbar {
