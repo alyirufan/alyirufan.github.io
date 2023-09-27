@@ -1,7 +1,7 @@
 /* styles.css */
 @font-face {
     font-family: 'MvTypeWriter';
-    src: url('/aliirufaan.github.io/docs/mvtypewritersb_v1.1.ttf') format('truetype');
+    src: url('/mvtypewritersb_v1.1.ttf') format('truetype');
 }
 
 /* Style for the navigation bar */
@@ -9,7 +9,7 @@
     background-color: #333;
     overflow: hidden;
     direction: rtl; /* Set text direction to right-to-left */
-    font-family: Arial, sans-serif; /* Change the font family to Arial */
+
 }
 
 /* Style for the navigation bar links */
