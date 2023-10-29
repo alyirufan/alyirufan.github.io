@@ -4,12 +4,10 @@
    
 }
 @font-face {
-font-family: "mv waheed";
-src: url("https://dl.dropboxusercontent.com/s/z0u7r5sz6ofh6so/MV_Waheed%283%29.otf") format('opentype');
-}
-@font-face {
-font-family: "Mv Faseyha";
-src: url("https://dl.dropboxusercontent.com/s/nt4yxgy3xwl40es/Faruma.otf") format('opentype');
+    font-family: 'DhivehiFont';
+    src: url('https://github.com/alyirufan/alyirufan.github.io/blob/main/docs/Gurafiku-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 .slideshow-container {
   position: relative;
