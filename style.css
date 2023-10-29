@@ -4,7 +4,7 @@
    
 }
 @font-face {
-    font-family: 'DhivehiFont';
+    font-family: 'Gurafiku';
     src: url('docs/Gurafiku-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -122,7 +122,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: "Mv Faseyha";
+  font-family: "Gurafiku";
   transition: 0.4s;
   direction: rtl;
    float: left;
