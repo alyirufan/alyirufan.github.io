@@ -1,7 +1,9 @@
 /* styles.css */
 @font-face {
-    font-family: 'MvTypeWriter';
-    src: url('mvtypewritersb_v1.1.ttf') format('truetype');
+    font-family: 'Gurafiku';
+    src: url('Gurafiku-Refular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Style for the navigation bar */
