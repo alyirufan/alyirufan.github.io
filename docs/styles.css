@@ -1,7 +1,7 @@
 /* styles.css */
 @font-face {
     font-family: 'DhivehiFont';
-    src: url('docs/Gurafiku-Regular.woff2') format('woff2');
+    src: url('main/docs/Gurafiku-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
